@@ -8,8 +8,8 @@ This repository has basic controller and service .
 * service is connecting with OPEN AI
 * service is returing data as string , or as json.
 * there are few endpoints
-  1 First end point to ask any question.
-  2 second end point to check capital of country or state
-  3 third endpoint to use prompt template to get country or state
-  4 fourth endpoint to get json response to get country or state
+  * First end point to ask any question.
+  * Second end point to check capital of country or state
+  * Third endpoint to use prompt template to get country or state
+  * Fourth endpoint to get json response to get country or state
   
