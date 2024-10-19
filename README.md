@@ -2,7 +2,7 @@
 
 This repository contains source code examples used to support my learning courses about the Spring Framework.
 
-## Course content
+## Content
 This repository has basic controller and service .
 * Controller has few endpoints to call service.
 * service is connecting with OPEN AI
