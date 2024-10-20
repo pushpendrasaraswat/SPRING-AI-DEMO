@@ -12,4 +12,5 @@ This repository has basic controller and service .
   * Second end point to check capital of country or state
   * Third endpoint to use prompt template to get country or state
   * Fourth endpoint to get json response to get country or state
+  * Fifteh endpoint where you can input text and prompt and result will be based on the prompt
   
