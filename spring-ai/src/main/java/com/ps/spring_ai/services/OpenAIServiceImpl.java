@@ -1,9 +1,6 @@
 package com.ps.spring_ai.services;
 
-import com.ps.spring_ai.record.Answer;
-import com.ps.spring_ai.record.GetCapitalRequest;
-import com.ps.spring_ai.record.GetCapitalWithInfoResponse;
-import com.ps.spring_ai.record.Question;
+import com.ps.spring_ai.record.*;
 import org.springframework.ai.chat.model.ChatModel;
 import org.springframework.ai.chat.model.ChatResponse;
 import org.springframework.ai.chat.prompt.Prompt;
@@ -109,5 +106,15 @@ public class OpenAIServiceImpl implements OpenAIService{
         return converter.convert(response.getResult().getOutput().getContent());
     }
 
+
+    @Override
+    public Answer getSummaryAccordingToPrompt(Summary summary){
+        PromptTemplate promptTemplate=new PromptTemplate(summary.prompt());
+        Prompt prompt=promptTemplate.create(Map.of("text",summary.text()));
+
+        ChatResponse response = chatModel.call(prompt);
+
+        return new Answer(response.getResult().getOutput().getContent());
+    }
 
 }

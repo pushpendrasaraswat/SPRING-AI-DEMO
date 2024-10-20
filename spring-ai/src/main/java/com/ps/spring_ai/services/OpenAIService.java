@@ -1,9 +1,6 @@
 package com.ps.spring_ai.services;
 
-import com.ps.spring_ai.record.Answer;
-import com.ps.spring_ai.record.GetCapitalRequest;
-import com.ps.spring_ai.record.GetCapitalWithInfoResponse;
-import com.ps.spring_ai.record.Question;
+import com.ps.spring_ai.record.*;
 
 public interface OpenAIService {
 
@@ -18,4 +15,6 @@ public interface OpenAIService {
     Answer getCapitalResponseAsJson(GetCapitalRequest capitalRequest);
 
     GetCapitalWithInfoResponse getCapitalwithInfoResponseAsJson(GetCapitalRequest capitalRequest);
+
+    Answer getSummaryAccordingToPrompt(Summary summary);
 }

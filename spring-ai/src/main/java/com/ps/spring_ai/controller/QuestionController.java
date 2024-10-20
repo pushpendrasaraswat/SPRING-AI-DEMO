@@ -1,10 +1,7 @@
 package com.ps.spring_ai.controller;
 
 
-import com.ps.spring_ai.record.Answer;
-import com.ps.spring_ai.record.GetCapitalRequest;
-import com.ps.spring_ai.record.GetCapitalWithInfoResponse;
-import com.ps.spring_ai.record.Question;
+import com.ps.spring_ai.record.*;
 import com.ps.spring_ai.services.OpenAIService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -43,4 +40,9 @@ public class QuestionController {
         return openAIService.getAnswer(question);
     }
 
+
+    @PostMapping("/summary-prompt")
+    public Answer getSummaryAccordingToPrompt(@RequestBody Summary summary){
+        return openAIService.getSummaryAccordingToPrompt(summary);
+    }
 }
