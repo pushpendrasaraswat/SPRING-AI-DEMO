@@ -1,0 +1,18 @@
+meta {
+  name: prompt with summary when wrong data
+  type: http
+  seq: 7
+}
+
+post {
+  url: http://localhost:8080/summary-prompt
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "text":"we are talking about govt here ",
+    "prompt":"In the provided text find out we are discussing about how many animal, retunr your result as list  if there no animal return NO animal found, provided story is '''{text}'''"
+  }
+}

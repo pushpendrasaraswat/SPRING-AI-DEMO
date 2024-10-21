@@ -1,0 +1,21 @@
+meta {
+  name: Get capital of state or country
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/capital
+  body: json
+  auth: none
+}
+
+headers {
+  Accept: application/json
+}
+
+body:json {
+  {
+    "stateOrCountry": "Portugal"
+  }
+}

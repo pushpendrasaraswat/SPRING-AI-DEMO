@@ -1,0 +1,21 @@
+meta {
+  name: Get capital of state or country with extra info
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/capital-extra-info
+  body: json
+  auth: none
+}
+
+headers {
+  Accept: application/json
+}
+
+body:json {
+  {
+    "stateOrCountry": "India"
+  }
+}
