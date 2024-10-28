@@ -23,5 +23,4 @@ public interface OpenAIService {
     Answer askAnswerFromRagWithMetaData(Question question);
 
     Answer getAnswerBoat(Question question);
-
 }

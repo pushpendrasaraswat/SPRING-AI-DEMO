@@ -3,7 +3,7 @@ spring:
         name: SPRING-AI_DEMO
     ai:
         openai:
-            api-key: ${OPENAI_API_KEY}
+            api-key: ${OPEN_API_KEY}
             embedding:
                 options:
                     model: text-embedding-3-small
@@ -24,7 +24,9 @@ spring:
             org:
                 springframework: DEBUG
 
-
+ai:
+    ninja:
+        key: ${NINJA_KEY}
 data:
   vector:
       storePath: /tmp/vectorstore.json
