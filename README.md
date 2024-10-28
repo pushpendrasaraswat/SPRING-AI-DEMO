@@ -21,6 +21,13 @@ This repository has basic controller and service .
 Image model is used to gernearte image.
 New endpoint created which will accept image related question and generated the image.
 
+there is one Image upload endpoint which takes an image and describe the image using imageAPI
+curl -X POST http://localhost:8080/vision \
+  -H "Content-Type: multipart/form-data" \
+  -F "file=@/Users/saraspu2/Downloads/sun_image.jpg" \
+  -F "name=test" \
+  -H "Accept: application/json"
+
                 
 ## WHAT IS RAG
 Retrieval-augmented generation (RAG) is a technique for enhancing the accuracy and reliability of generative AI models with facts fetched from external sources.
