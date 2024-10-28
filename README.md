@@ -17,6 +17,11 @@ This repository has basic controller and service .
 
 * New RAg endpoint added which is using required document to create data and if data is not there retunring no data found
 
+## Image model
+Image model is used to gernearte image.
+New endpoint created which will accept image related question and generated the image.
+
+                
 ## WHAT IS RAG
 Retrieval-augmented generation (RAG) is a technique for enhancing the accuracy and reliability of generative AI models with facts fetched from external sources.
 in our case external source is provided data.
