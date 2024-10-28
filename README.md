@@ -13,6 +13,7 @@ This repository has basic controller and service .
   * Third endpoint to use prompt template to get country or state
   * Fourth endpoint to get json response to get country or state
   * Fifteh endpoint where you can input text and prompt and result will be based on the prompt
+  * sixth endpoint to use function for callback , using Ninja API to get weather provided lat and long
 
 * New RAg endpoint added which is using required document to create data and if data is not there retunring no data found
 
