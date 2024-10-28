@@ -24,7 +24,7 @@ New endpoint created which will accept image related question and generated the 
 there is one Image upload endpoint which takes an image and describe the image using imageAPI
 curl -X POST http://localhost:8080/vision \
   -H "Content-Type: multipart/form-data" \
-  -F "file=@/Users/saraspu2/Downloads/sun_image.jpg" \
+  -F "file=@/filepath/sun_image.jpg" \
   -F "name=test" \
   -H "Accept: application/json"
 
