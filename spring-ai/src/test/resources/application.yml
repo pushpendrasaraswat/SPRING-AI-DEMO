@@ -1,0 +1,9 @@
+spring:
+    ai:
+        openai:
+            api-key: ${OPEN_API_KEY}
+data:
+    vector:
+        storePath: /temp/vectorstore.json
+        documentsToLoad:
+            - classpath:/movies500.csv

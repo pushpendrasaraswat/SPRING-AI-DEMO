@@ -1,0 +1,17 @@
+meta {
+  name: Get capital as json
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8080/capital-json
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "stateOrCountry": "India"
+  }
+}
