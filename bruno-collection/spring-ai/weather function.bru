@@ -1,0 +1,18 @@
+meta {
+  name: weather function
+  type: http
+  seq: 11
+}
+
+post {
+  url: http://localhost:8080/weather
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "lat":"41.1579°",
+    "lon":"8.6291°"
+  }
+}

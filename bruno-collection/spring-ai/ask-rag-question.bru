@@ -1,0 +1,21 @@
+meta {
+  name: ask-rag-question
+  type: http
+  seq: 8
+}
+
+post {
+  url: http://localhost:8080/ask-rag-question
+  body: json
+  auth: none
+}
+
+headers {
+  Accept: application/json
+}
+
+body:json {
+  {
+    "question": "in how many languages Avatar movie was released ?"
+  }
+}

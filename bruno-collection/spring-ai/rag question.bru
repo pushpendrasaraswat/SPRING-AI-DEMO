@@ -1,0 +1,21 @@
+meta {
+  name: rag question
+  type: http
+  seq: 9
+}
+
+post {
+  url: http://localhost:8080/ask-rag-question-metada
+  body: json
+  auth: none
+}
+
+headers {
+  Accept: application/json
+}
+
+body:json {
+  {
+    "question": "production_companies of Pirates of the Caribbean: At World's End?"
+  }
+}

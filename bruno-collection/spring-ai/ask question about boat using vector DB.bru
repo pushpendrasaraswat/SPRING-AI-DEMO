@@ -1,0 +1,17 @@
+meta {
+  name: ask question about boat using vector DB
+  type: http
+  seq: 10
+}
+
+post {
+  url: http://localhost:8080/ask-rag-question-boat
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "question":"what is a good truk to pull a sportman truck 322?"
+  }
+}
