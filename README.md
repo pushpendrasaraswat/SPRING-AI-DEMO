@@ -21,7 +21,8 @@ This repository has basic controller and service .
 Image model is used to gernearte image.
 New endpoint created which will accept image related question and generated the image.
 
-there is one Image upload endpoint which takes an image and describe the image using imageAPI
+there is one Image upload endpoint which takes an image and describe the image using imageAPI.
+
 curl -X POST http://localhost:8080/vision \
   -H "Content-Type: multipart/form-data" \
   -F "file=@/filepath/sun_image.jpg" \
