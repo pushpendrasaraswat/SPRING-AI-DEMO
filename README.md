@@ -29,6 +29,11 @@ curl -X POST http://localhost:8080/vision \
   -F "name=test" \
   -H "Accept: application/json"
 
+## Text to speech
+OpenAiAudioSpeechModel is used to convert text to sppech, which uses speachoption and speach prompt to convert text to Speech .
+It has few voice options available like Alloy, Echo, Fable, nova etc.
+
+There is one end point implemented which takes text as input and return mp3 file as speech.
                 
 ## WHAT IS RAG
 Retrieval-augmented generation (RAG) is a technique for enhancing the accuracy and reliability of generative AI models with facts fetched from external sources.
