@@ -1,0 +1,20 @@
+meta {
+  name: evaluate image
+  type: http
+  seq: 13
+}
+
+post {
+  url: http://localhost:8080/vision
+  body: multipartForm
+  auth: none
+}
+
+headers {
+  Content-Type: multipart/form-data
+}
+
+body:multipart-form {
+  file: 
+  name: test
+}

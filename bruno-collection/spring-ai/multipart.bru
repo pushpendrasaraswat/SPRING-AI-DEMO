@@ -1,0 +1,16 @@
+meta {
+  name: multipart
+  type: http
+  seq: 14
+}
+
+post {
+  url: http://localhost:8080/vision
+  body: none
+  auth: none
+}
+
+headers {
+  Content-Type: multipart/form-data
+  Accept: application/json
+}

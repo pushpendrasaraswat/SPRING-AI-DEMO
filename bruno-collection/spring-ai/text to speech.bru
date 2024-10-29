@@ -1,0 +1,17 @@
+meta {
+  name: text to speech
+  type: http
+  seq: 15
+}
+
+post {
+  url: http://localhost:8080/audio
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "question":"This is spring ai text to speech"
+  }
+}
